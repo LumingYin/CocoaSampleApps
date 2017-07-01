@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		56773D811F084570000C658A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56514E271F08448700AD2E26 /* Main.storyboard */; };
+		56773D831F0845F3000C658A /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56773D821F0845F3000C658A /* EpisodeViewController.swift */; };
+		56773D851F0846EA000C658A /* SplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56773D841F0846EA000C658A /* SplitController.swift */; };
+		56773D871F084A1E000C658A /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56773D861F084A1E000C658A /* Episode.swift */; };
+		56773D891F08545D000C658A /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56773D881F08545D000C658A /* EpisodeCell.swift */; };
 		568DC22D1F01FCA300AE1442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DC22C1F01FCA300AE1442 /* AppDelegate.swift */; };
 		568DC2321F01FCA300AE1442 /* PodcastPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 568DC2301F01FCA300AE1442 /* PodcastPlayer.xcdatamodeld */; };
 		568DC2341F01FCA300AE1442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568DC2331F01FCA300AE1442 /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		56514E281F08448700AD2E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56773D821F0845F3000C658A /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
+		56773D841F0846EA000C658A /* SplitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitController.swift; sourceTree = "<group>"; };
+		56773D861F084A1E000C658A /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		56773D881F08545D000C658A /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
 		568DC2291F01FCA300AE1442 /* PodcastPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568DC22C1F01FCA300AE1442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		568DC2311F01FCA300AE1442 /* PodcastPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PodcastPlayer.xcdatamodel; sourceTree = "<group>"; };
@@ -62,10 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				56514E271F08448700AD2E26 /* Main.storyboard */,
+				56773D881F08545D000C658A /* EpisodeCell.swift */,
+				56773D841F0846EA000C658A /* SplitController.swift */,
 				568DC23F1F01FF1900AE1442 /* PodcastsViewController.swift */,
+				56773D821F0845F3000C658A /* EpisodeViewController.swift */,
 				568DC22C1F01FCA300AE1442 /* AppDelegate.swift */,
-				568DC2331F01FCA300AE1442 /* Assets.xcassets */,
 				568DC2411F0201A600AE1442 /* Parser.swift */,
+				56773D861F084A1E000C658A /* Episode.swift */,
+				568DC2331F01FCA300AE1442 /* Assets.xcassets */,
 				568DC2381F01FCA300AE1442 /* Info.plist */,
 				568DC2391F01FCA300AE1442 /* PodcastPlayer.entitlements */,
 				568DC2301F01FCA300AE1442 /* PodcastPlayer.xcdatamodeld */,
@@ -158,11 +170,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56773D851F0846EA000C658A /* SplitController.swift in Sources */,
 				568DC2421F0201A600AE1442 /* Parser.swift in Sources */,
+				56773D831F0845F3000C658A /* EpisodeViewController.swift in Sources */,
 				568DC2461F02039300AE1442 /* SWXMLHash.swift in Sources */,
 				568DC22D1F01FCA300AE1442 /* AppDelegate.swift in Sources */,
+				56773D891F08545D000C658A /* EpisodeCell.swift in Sources */,
 				568DC2401F01FF1900AE1442 /* PodcastsViewController.swift in Sources */,
 				568DC2321F01FCA300AE1442 /* PodcastPlayer.xcdatamodeld in Sources */,
+				56773D871F084A1E000C658A /* Episode.swift in Sources */,
 				568DC2451F02039300AE1442 /* SWXMLHash+TypeConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,7 @@ class PodcastsViewController: NSViewController, NSTableViewDelegate, NSTableView
     @IBOutlet weak var tableView: NSTableView!
     
     var podcasts : [Podcast] = []
+    var episodesVC : EpisodeViewController? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +62,10 @@ class PodcastsViewController: NSViewController, NSTableViewDelegate, NSTableView
                                 (NSApplication.shared.delegate as? AppDelegate)?.saveAction(nil)
                                 
                                 self.getPodcasts()
+                                
+                                DispatchQueue.main.async {
+                                    self.podcastURLTextField.stringValue = ""
+                                }
                             }
                         }
                         print(info)
@@ -103,6 +108,14 @@ class PodcastsViewController: NSViewController, NSTableViewDelegate, NSTableView
             cell?.textField?.stringValue = "Unknown Title"
         }
         return cell
+    }
+    
+    func tableViewSelectionDidChange(_ notification: Notification) {
+        if (tableView.selectedRow >= 0) {
+            let podcast = podcasts[tableView.selectedRow]
+            episodesVC?.podcast = podcast
+            episodesVC?.updateView()
+        }
     }
     
 }
