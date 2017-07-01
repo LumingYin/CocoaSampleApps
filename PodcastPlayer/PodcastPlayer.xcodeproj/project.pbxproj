@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56773D811F084570000C658A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56514E271F08448700AD2E26 /* Main.storyboard */; };
 		568DC22D1F01FCA300AE1442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DC22C1F01FCA300AE1442 /* AppDelegate.swift */; };
 		568DC2321F01FCA300AE1442 /* PodcastPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 568DC2301F01FCA300AE1442 /* PodcastPlayer.xcdatamodeld */; };
 		568DC2341F01FCA300AE1442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568DC2331F01FCA300AE1442 /* Assets.xcassets */; };
-		568DC2371F01FCA300AE1442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568DC2351F01FCA300AE1442 /* Main.storyboard */; };
 		568DC2401F01FF1900AE1442 /* PodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DC23F1F01FF1900AE1442 /* PodcastsViewController.swift */; };
 		568DC2421F0201A600AE1442 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DC2411F0201A600AE1442 /* Parser.swift */; };
 		568DC2451F02039300AE1442 /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568DC2431F02039300AE1442 /* SWXMLHash+TypeConversion.swift */; };
@@ -18,11 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56514E281F08448700AD2E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		568DC2291F01FCA300AE1442 /* PodcastPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568DC22C1F01FCA300AE1442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		568DC2311F01FCA300AE1442 /* PodcastPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PodcastPlayer.xcdatamodel; sourceTree = "<group>"; };
 		568DC2331F01FCA300AE1442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		568DC2361F01FCA300AE1442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		568DC2381F01FCA300AE1442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		568DC2391F01FCA300AE1442 /* PodcastPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodcastPlayer.entitlements; sourceTree = "<group>"; };
 		568DC23F1F01FF1900AE1442 /* PodcastsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsViewController.swift; sourceTree = "<group>"; };
@@ -61,10 +61,10 @@
 		568DC22B1F01FCA300AE1442 /* PodcastPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				56514E271F08448700AD2E26 /* Main.storyboard */,
 				568DC23F1F01FF1900AE1442 /* PodcastsViewController.swift */,
 				568DC22C1F01FCA300AE1442 /* AppDelegate.swift */,
 				568DC2331F01FCA300AE1442 /* Assets.xcassets */,
-				568DC2351F01FCA300AE1442 /* Main.storyboard */,
 				568DC2411F0201A600AE1442 /* Parser.swift */,
 				568DC2381F01FCA300AE1442 /* Info.plist */,
 				568DC2391F01FCA300AE1442 /* PodcastPlayer.entitlements */,
@@ -146,8 +146,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56773D811F084570000C658A /* Main.storyboard in Resources */,
 				568DC2341F01FCA300AE1442 /* Assets.xcassets in Resources */,
-				568DC2371F01FCA300AE1442 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,10 +170,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		568DC2351F01FCA300AE1442 /* Main.storyboard */ = {
+		56514E271F08448700AD2E26 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				568DC2361F01FCA300AE1442 /* Base */,
+				56514E281F08448700AD2E26 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -328,6 +328,7 @@
 				568DC23E1F01FCA300AE1442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
