@@ -20,8 +20,8 @@ class CreateAccountViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.profilePicFile = PFFile(data: self.jpegDataFrom(image: image))
-        self.profilePicFile?.saveInBackground()
+//        self.profilePicFile = PFFile(data: self.jpegDataFrom(image: profilePicImageView.image!))
+//        self.profilePicFile?.saveInBackground()
     }
     
     @IBAction func loginClicked(_ sender: Any) {

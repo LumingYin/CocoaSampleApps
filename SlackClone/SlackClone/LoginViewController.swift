@@ -22,6 +22,21 @@ class LoginViewController: NSViewController {
                 passwordTextField.stringValue = password
             }
         }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .nanoseconds(50)) {
+            if var frame = self.view.window?.frame {
+                frame.size = CGSize(width: 480, height: 380)
+                self.view.window?.setFrame(frame, display: true, animate: true)
+            }
+            
+        }
+    }
+    
+    override func viewDidAppear() {
+        if var frame = view.window?.frame {
+            frame.size = CGSize(width: 480, height: 380)
+            view.window?.setFrame(frame, display: true, animate: true)
+        }
     }
 
     @IBAction func createAccountClicked(_ sender: NSButton) {
@@ -30,7 +45,7 @@ class LoginViewController: NSViewController {
         }
     }
     
-    @IBAction func loginClicked(_ sender: NSButton) {
+    @IBAction func loginClicked(_ sender: Any) {
         PFUser.logInWithUsername(inBackground: emailTextField.stringValue, password: passwordTextField.stringValue) { (user: PFUser?, error: Error?) in
             if error == nil {
                 print("You logged in")

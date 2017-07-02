@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5639E1851F09951F00E97AA8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5639E1841F09951F00E97AA8 /* ChatViewController.swift */; };
+		5639E1871F099BEA00E97AA8 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5639E1861F099BEA00E97AA8 /* ChatCell.swift */; };
 		56608DED1F0989E3002B48C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56608DEB1F0989BB002B48C0 /* Main.storyboard */; };
 		56608DEF1F098AE0002B48C0 /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56608DEE1F098AE0002B48C0 /* ChannelsViewController.swift */; };
+		56608DF21F098F7A002B48C0 /* AddChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56608DF01F098F7A002B48C0 /* AddChannelViewController.swift */; };
 		56E740EB1F09883800C2068A /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E740EA1F09883800C2068A /* MainSplitViewController.swift */; };
 		56E7963B1F09782D00C0C581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7963A1F09782D00C0C581 /* AppDelegate.swift */; };
 		56E7963D1F09782D00C0C581 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7963C1F09782D00C0C581 /* LoginViewController.swift */; };
@@ -19,8 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5639E1841F09951F00E97AA8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = SlackClone/ChatViewController.swift; sourceTree = SOURCE_ROOT; };
+		5639E1861F099BEA00E97AA8 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatCell.swift; path = SlackClone/ChatCell.swift; sourceTree = SOURCE_ROOT; };
 		56608DEC1F0989BB002B48C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		56608DEE1F098AE0002B48C0 /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelsViewController.swift; path = SlackClone/ChannelsViewController.swift; sourceTree = SOURCE_ROOT; };
+		56608DF01F098F7A002B48C0 /* AddChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelViewController.swift; sourceTree = "<group>"; };
 		56E740EA1F09883800C2068A /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		56E796371F09782D00C0C581 /* SlackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E7963A1F09782D00C0C581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,11 +93,14 @@
 			children = (
 				56608DEA1F0989BB002B48C0 /* Base.lproj */,
 				56E7963A1F09782D00C0C581 /* AppDelegate.swift */,
+				5639E1861F099BEA00E97AA8 /* ChatCell.swift */,
+				5639E1841F09951F00E97AA8 /* ChatViewController.swift */,
 				56608DEE1F098AE0002B48C0 /* ChannelsViewController.swift */,
 				56E7963C1F09782D00C0C581 /* LoginViewController.swift */,
 				56E7964C1F097A7C00C0C581 /* CreateAccountViewController.swift */,
 				56E7964A1F097A2F00C0C581 /* MainWindowController.swift */,
 				56E740EA1F09883800C2068A /* MainSplitViewController.swift */,
+				56608DF01F098F7A002B48C0 /* AddChannelViewController.swift */,
 				56E7963E1F09782D00C0C581 /* Assets.xcassets */,
 				56E796431F09782D00C0C581 /* Info.plist */,
 				56E796441F09782D00C0C581 /* SlackClone.entitlements */,
@@ -230,9 +239,12 @@
 			files = (
 				56608DEF1F098AE0002B48C0 /* ChannelsViewController.swift in Sources */,
 				56E740EB1F09883800C2068A /* MainSplitViewController.swift in Sources */,
+				5639E1871F099BEA00E97AA8 /* ChatCell.swift in Sources */,
+				5639E1851F09951F00E97AA8 /* ChatViewController.swift in Sources */,
 				56E7964D1F097A7C00C0C581 /* CreateAccountViewController.swift in Sources */,
 				56E7963D1F09782D00C0C581 /* LoginViewController.swift in Sources */,
 				56E7963B1F09782D00C0C581 /* AppDelegate.swift in Sources */,
+				56608DF21F098F7A002B48C0 /* AddChannelViewController.swift in Sources */,
 				56E7964B1F097A2F00C0C581 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
