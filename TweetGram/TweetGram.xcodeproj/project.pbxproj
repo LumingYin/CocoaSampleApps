@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56773DCC1F08657A000C658A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56773DCB1F08657A000C658A /* AppDelegate.swift */; };
+		56773DCE1F08657A000C658A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56773DCD1F08657A000C658A /* ViewController.swift */; };
+		56773DD01F08657A000C658A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56773DCF1F08657A000C658A /* Assets.xcassets */; };
+		56773DD31F08657A000C658A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56773DD11F08657A000C658A /* Main.storyboard */; };
+		568A13431F0963D5007415FD /* TweetGramItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13411F0963D4007415FD /* TweetGramItem.swift */; };
+		568A13441F0963D5007415FD /* TweetGramItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568A13421F0963D5007415FD /* TweetGramItem.xib */; };
+		568A13461F09646B007415FD /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 568A13451F09646A007415FD /* image.png */; };
+		568A135F1F0964F1007415FD /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13491F0964EF007415FD /* Box.swift */; };
+		568A13601F0964F1007415FD /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A134A1F0964EF007415FD /* ImageView+Kingfisher.swift */; };
+		568A13611F0964F1007415FD /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A134B1F0964F0007415FD /* KingfisherManager.swift */; };
+		568A13621F0964F1007415FD /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A134C1F0964F0007415FD /* ImageCache.swift */; };
+		568A13631F0964F1007415FD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A134D1F0964F0007415FD /* Resource.swift */; };
+		568A13641F0964F1007415FD /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A134E1F0964F0007415FD /* Kingfisher.swift */; };
+		568A13651F0964F1007415FD /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A134F1F0964F0007415FD /* ImageProcessor.swift */; };
+		568A13661F0964F1007415FD /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13501F0964F0007415FD /* String+MD5.swift */; };
+		568A13671F0964F1007415FD /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13511F0964F0007415FD /* ImageDownloader.swift */; };
+		568A13681F0964F1007415FD /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13521F0964F0007415FD /* Indicator.swift */; };
+		568A13691F0964F1007415FD /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13531F0964F0007415FD /* CacheSerializer.swift */; };
+		568A136A1F0964F1007415FD /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13541F0964F0007415FD /* ImageTransition.swift */; };
+		568A136B1F0964F1007415FD /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13551F0964F0007415FD /* Image.swift */; };
+		568A136D1F0964F1007415FD /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13571F0964F0007415FD /* Filter.swift */; };
+		568A136E1F0964F1007415FD /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13581F0964F0007415FD /* ThreadHelper.swift */; };
+		568A136F1F0964F1007415FD /* NSButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A13591F0964F0007415FD /* NSButton+Kingfisher.swift */; };
+		568A13701F0964F1007415FD /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A135A1F0964F0007415FD /* FormatIndicatedCacheSerializer.swift */; };
+		568A13711F0964F1007415FD /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A135B1F0964F1007415FD /* KingfisherOptionsInfo.swift */; };
+		568A13721F0964F1007415FD /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A135C1F0964F1007415FD /* ImagePrefetcher.swift */; };
+		568A13731F0964F1007415FD /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A135D1F0964F1007415FD /* RequestModifier.swift */; };
+		56BE11231F087B92009D1777 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BE11221F087B92009D1777 /* SwiftyJSON.swift */; };
+		5AEC595DB2BDDD544FEF38D4 /* Pods_TweetGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19E5F43A91CCD4D34055124 /* Pods_TweetGram.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E93654F7CC4E1EAAB4564D8 /* Pods-TweetGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetGram/Pods-TweetGram.release.xcconfig"; sourceTree = "<group>"; };
+		56773DC81F08657A000C658A /* TweetGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56773DCB1F08657A000C658A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56773DCD1F08657A000C658A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56773DCF1F08657A000C658A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56773DD21F08657A000C658A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56773DD41F08657A000C658A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56773DD51F08657A000C658A /* TweetGram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TweetGram.entitlements; sourceTree = "<group>"; };
+		568A13411F0963D4007415FD /* TweetGramItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetGramItem.swift; sourceTree = "<group>"; };
+		568A13421F0963D5007415FD /* TweetGramItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetGramItem.xib; sourceTree = "<group>"; };
+		568A13451F09646A007415FD /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image.png; path = ../../../../Desktop/image.png; sourceTree = "<group>"; };
+		568A13491F0964EF007415FD /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Box.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/Box.swift"; sourceTree = "<group>"; };
+		568A134A1F0964EF007415FD /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "../../../../../Downloads/Kingfisher-master/Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		568A134B1F0964F0007415FD /* KingfisherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/KingfisherManager.swift"; sourceTree = "<group>"; };
+		568A134C1F0964F0007415FD /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/ImageCache.swift"; sourceTree = "<group>"; };
+		568A134D1F0964F0007415FD /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/Resource.swift"; sourceTree = "<group>"; };
+		568A134E1F0964F0007415FD /* Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/Kingfisher.swift"; sourceTree = "<group>"; };
+		568A134F1F0964F0007415FD /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/ImageProcessor.swift"; sourceTree = "<group>"; };
+		568A13501F0964F0007415FD /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "../../../../../Downloads/Kingfisher-master/Sources/String+MD5.swift"; sourceTree = "<group>"; };
+		568A13511F0964F0007415FD /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/ImageDownloader.swift"; sourceTree = "<group>"; };
+		568A13521F0964F0007415FD /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/Indicator.swift"; sourceTree = "<group>"; };
+		568A13531F0964F0007415FD /* CacheSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/CacheSerializer.swift"; sourceTree = "<group>"; };
+		568A13541F0964F0007415FD /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/ImageTransition.swift"; sourceTree = "<group>"; };
+		568A13551F0964F0007415FD /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/Image.swift"; sourceTree = "<group>"; };
+		568A13571F0964F0007415FD /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/Filter.swift"; sourceTree = "<group>"; };
+		568A13581F0964F0007415FD /* ThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/ThreadHelper.swift"; sourceTree = "<group>"; };
+		568A13591F0964F0007415FD /* NSButton+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSButton+Kingfisher.swift"; path = "../../../../../Downloads/Kingfisher-master/Sources/NSButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		568A135A1F0964F0007415FD /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/FormatIndicatedCacheSerializer.swift"; sourceTree = "<group>"; };
+		568A135B1F0964F1007415FD /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/KingfisherOptionsInfo.swift"; sourceTree = "<group>"; };
+		568A135C1F0964F1007415FD /* ImagePrefetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/ImagePrefetcher.swift"; sourceTree = "<group>"; };
+		568A135D1F0964F1007415FD /* RequestModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = "../../../../../Downloads/Kingfisher-master/Sources/RequestModifier.swift"; sourceTree = "<group>"; };
+		56BE11221F087B92009D1777 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../../Downloads/SwiftyJSON-master/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
+		E157596F5994213E08E17E4F /* Pods-TweetGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetGram/Pods-TweetGram.debug.xcconfig"; sourceTree = "<group>"; };
+		E19E5F43A91CCD4D34055124 /* Pods_TweetGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TweetGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56773DC51F08657A000C658A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEC595DB2BDDD544FEF38D4 /* Pods_TweetGram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56773DBF1F08657A000C658A = {
+			isa = PBXGroup;
+			children = (
+				56773DCA1F08657A000C658A /* TweetGram */,
+				56773DC91F08657A000C658A /* Products */,
+				884C200A6D7255402FDE1733 /* Pods */,
+				C79196E52193D5D5D10F2F03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56773DC91F08657A000C658A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56773DC81F08657A000C658A /* TweetGram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56773DCA1F08657A000C658A /* TweetGram */ = {
+			isa = PBXGroup;
+			children = (
+				568A13471F0964E8007415FD /* KingFisher */,
+				568A13451F09646A007415FD /* image.png */,
+				568A13411F0963D4007415FD /* TweetGramItem.swift */,
+				568A13421F0963D5007415FD /* TweetGramItem.xib */,
+				56773DCB1F08657A000C658A /* AppDelegate.swift */,
+				56773DCD1F08657A000C658A /* ViewController.swift */,
+				56BE11221F087B92009D1777 /* SwiftyJSON.swift */,
+				56773DCF1F08657A000C658A /* Assets.xcassets */,
+				56773DD11F08657A000C658A /* Main.storyboard */,
+				56773DD41F08657A000C658A /* Info.plist */,
+				56773DD51F08657A000C658A /* TweetGram.entitlements */,
+			);
+			path = TweetGram;
+			sourceTree = "<group>";
+		};
+		568A13471F0964E8007415FD /* KingFisher */ = {
+			isa = PBXGroup;
+			children = (
+				568A13491F0964EF007415FD /* Box.swift */,
+				568A13531F0964F0007415FD /* CacheSerializer.swift */,
+				568A13571F0964F0007415FD /* Filter.swift */,
+				568A135A1F0964F0007415FD /* FormatIndicatedCacheSerializer.swift */,
+				568A13551F0964F0007415FD /* Image.swift */,
+				568A134C1F0964F0007415FD /* ImageCache.swift */,
+				568A13511F0964F0007415FD /* ImageDownloader.swift */,
+				568A135C1F0964F1007415FD /* ImagePrefetcher.swift */,
+				568A134F1F0964F0007415FD /* ImageProcessor.swift */,
+				568A13541F0964F0007415FD /* ImageTransition.swift */,
+				568A134A1F0964EF007415FD /* ImageView+Kingfisher.swift */,
+				568A13521F0964F0007415FD /* Indicator.swift */,
+				568A134E1F0964F0007415FD /* Kingfisher.swift */,
+				568A134B1F0964F0007415FD /* KingfisherManager.swift */,
+				568A135B1F0964F1007415FD /* KingfisherOptionsInfo.swift */,
+				568A13591F0964F0007415FD /* NSButton+Kingfisher.swift */,
+				568A135D1F0964F1007415FD /* RequestModifier.swift */,
+				568A134D1F0964F0007415FD /* Resource.swift */,
+				568A13501F0964F0007415FD /* String+MD5.swift */,
+				568A13581F0964F0007415FD /* ThreadHelper.swift */,
+			);
+			path = KingFisher;
+			sourceTree = "<group>";
+		};
+		884C200A6D7255402FDE1733 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E157596F5994213E08E17E4F /* Pods-TweetGram.debug.xcconfig */,
+				4E93654F7CC4E1EAAB4564D8 /* Pods-TweetGram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C79196E52193D5D5D10F2F03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E19E5F43A91CCD4D34055124 /* Pods_TweetGram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56773DC71F08657A000C658A /* TweetGram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56773DD81F08657A000C658A /* Build configuration list for PBXNativeTarget "TweetGram" */;
+			buildPhases = (
+				8BD39318A930A9DA321D1BFE /* [CP] Check Pods Manifest.lock */,
+				56773DC41F08657A000C658A /* Sources */,
+				56773DC51F08657A000C658A /* Frameworks */,
+				56773DC61F08657A000C658A /* Resources */,
+				81BFFC55BB45D0D9F9B8BBEC /* [CP] Embed Pods Frameworks */,
+				873F56DD3CDB20972B4A806D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetGram;
+			productName = TweetGram;
+			productReference = 56773DC81F08657A000C658A /* TweetGram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56773DC01F08657A000C658A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Bright;
+				TargetAttributes = {
+					56773DC71F08657A000C658A = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 56773DC31F08657A000C658A /* Build configuration list for PBXProject "TweetGram" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56773DBF1F08657A000C658A;
+			productRefGroup = 56773DC91F08657A000C658A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56773DC71F08657A000C658A /* TweetGram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56773DC61F08657A000C658A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56773DD01F08657A000C658A /* Assets.xcassets in Resources */,
+				56773DD31F08657A000C658A /* Main.storyboard in Resources */,
+				568A13441F0963D5007415FD /* TweetGramItem.xib in Resources */,
+				568A13461F09646B007415FD /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81BFFC55BB45D0D9F9B8BBEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TweetGram/Pods-TweetGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		873F56DD3CDB20972B4A806D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TweetGram/Pods-TweetGram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD39318A930A9DA321D1BFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56773DC41F08657A000C658A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568A13711F0964F1007415FD /* KingfisherOptionsInfo.swift in Sources */,
+				568A13661F0964F1007415FD /* String+MD5.swift in Sources */,
+				568A136D1F0964F1007415FD /* Filter.swift in Sources */,
+				568A136E1F0964F1007415FD /* ThreadHelper.swift in Sources */,
+				568A13731F0964F1007415FD /* RequestModifier.swift in Sources */,
+				568A136B1F0964F1007415FD /* Image.swift in Sources */,
+				56BE11231F087B92009D1777 /* SwiftyJSON.swift in Sources */,
+				568A13671F0964F1007415FD /* ImageDownloader.swift in Sources */,
+				568A13431F0963D5007415FD /* TweetGramItem.swift in Sources */,
+				568A13631F0964F1007415FD /* Resource.swift in Sources */,
+				568A13621F0964F1007415FD /* ImageCache.swift in Sources */,
+				568A136F1F0964F1007415FD /* NSButton+Kingfisher.swift in Sources */,
+				568A135F1F0964F1007415FD /* Box.swift in Sources */,
+				568A13641F0964F1007415FD /* Kingfisher.swift in Sources */,
+				568A13601F0964F1007415FD /* ImageView+Kingfisher.swift in Sources */,
+				56773DCE1F08657A000C658A /* ViewController.swift in Sources */,
+				56773DCC1F08657A000C658A /* AppDelegate.swift in Sources */,
+				568A13651F0964F1007415FD /* ImageProcessor.swift in Sources */,
+				568A13721F0964F1007415FD /* ImagePrefetcher.swift in Sources */,
+				568A13681F0964F1007415FD /* Indicator.swift in Sources */,
+				568A13691F0964F1007415FD /* CacheSerializer.swift in Sources */,
+				568A13701F0964F1007415FD /* FormatIndicatedCacheSerializer.swift in Sources */,
+				568A13611F0964F1007415FD /* KingfisherManager.swift in Sources */,
+				568A136A1F0964F1007415FD /* ImageTransition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56773DD11F08657A000C658A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56773DD21F08657A000C658A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56773DD61F08657A000C658A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		56773DD71F08657A000C658A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		56773DD91F08657A000C658A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E157596F5994213E08E17E4F /* Pods-TweetGram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TweetGram/TweetGram.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TweetGram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kay.TweetGram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		56773DDA1F08657A000C658A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E93654F7CC4E1EAAB4564D8 /* Pods-TweetGram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TweetGram/TweetGram.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TweetGram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kay.TweetGram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56773DC31F08657A000C658A /* Build configuration list for PBXProject "TweetGram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56773DD61F08657A000C658A /* Debug */,
+				56773DD71F08657A000C658A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56773DD81F08657A000C658A /* Build configuration list for PBXNativeTarget "TweetGram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56773DD91F08657A000C658A /* Debug */,
+				56773DDA1F08657A000C658A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56773DC01F08657A000C658A /* Project object */;
+}
